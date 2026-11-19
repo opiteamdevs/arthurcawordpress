@@ -15,7 +15,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Coloca sua aula interativa de PHP + Docker sem atropelar o index.php do WordPress
-COPY lab.php /var/www/html/lab.php
 
 # Garante permissão correta pro Apache (www-data)
 RUN chown -R www-data:www-data /var/www/html
